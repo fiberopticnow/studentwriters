@@ -33,6 +33,19 @@ GRADIENTS
   background: linear-gradient(to bottom right, #8a14cc, #1189FB); /* Standard syntax */
 }
 
+    /*=======================================
+TRANSITION EFFECTS
+==================================================*/
+
+.fade
+{
+        opacity:0.5;
+}
+.fade:hover
+{
+        opacity:1;
+}
+
 /*=======================================
     GENERAL STYLES
 ==================================================*/
@@ -108,7 +121,7 @@ section {
 }
 
 .c-blue {
-   background-color:black;
+   background-color:#ffffff ;
    color:#fff;
 }
 .form-control {
@@ -156,7 +169,7 @@ height: 300px;
 ==================================================*/
 
 #div1 {
-    padding-top:130px;
+    padding-top:100px;
     padding-bottom:500px;
     color:#000;
 }
@@ -167,10 +180,44 @@ height: 500px;
 }
 
 .div1-main{
-    font-size:30px ;
+    font-size:50px ;
     font-weight:900;
 }
 
+/*=======================================
+  DIV 3 STYLES
+==================================================*/
+
+.head-btn-one {
+    background-color: rgba(252, 64, 101, 1);
+     border: 0px solid #fff;
+
+}
+#div3-sec {
+
+height: 600px;
+   
+}
+#div3 {
+    padding-top:130px;
+    padding-bottom:100px;
+    color:#fff;
+}
+.head-main {
+    font-size:50px ;
+    font-weight:900;
+    
+}
+.head-sub-main {
+    font-size:30px ;
+    font-weight:600;
+    padding:5px 20px 10px 20px;
+}
+.head-last {
+    font-size:20px ;
+    font-weight:300;
+    padding:5px 20px 20px 20px;
+}
 
 /*=======================================
   THREE BOXES STYLES
