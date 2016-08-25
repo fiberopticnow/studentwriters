@@ -39,7 +39,7 @@ TRANSITION EFFECTS
 
 .fade
 {
-        opacity:0.5;
+        opacity:0.85;
 }
 .fade:hover
 {
@@ -238,6 +238,7 @@ height: 600px;
     color:#fff;
     font-size:16px;
     padding-top: 45px;
+    transition: fade 1s ease;
 }
 .service-div > i {
     color:#fff;
