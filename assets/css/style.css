@@ -25,7 +25,7 @@ GRADIENTS
   background: linear-gradient(to bottom right, #1189FB , #8a14cc); /* Standard syntax */
 }
 
-#grad2 {
+#grad2, .grad2 {
   background: #8a14cc; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #8a14cc, #1189FB); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(bottom right, #8a14cc, #1189FB); /* For Opera 11.1 to 12.0 */
