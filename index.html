@@ -32,30 +32,78 @@
     <![endif]-->
      <!--EMOJI -->
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-     <!--GOOGLE CHARTS -->
+
+       <!--FONT AWESOME -->
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+     
+     <!--GOOGLE CHART 1 -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Candidate', 'Hours per Day'],
-          ['Trump',     11],
-          ['Hillary',      2],
-          ['Other',  2],
+
+      // Load Charts and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Draw the pie chart for Chart 1
+      google.charts.setOnLoadCallback(drawChart1);
+
+      // Draw the pie chart for Chart 2
+      google.charts.setOnLoadCallback(drawChart2);
+
+      // Callback that draws the pie chart 
+      function drawChart1() {
+
+        // Data Table Pie Chart 1
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Always', 1],
+          ['Often', 1],
+          ['Sometimes', 2],
+          ['Rarely', 2],
+          ['Never', 1]
         ]);
 
-        var options = {
-          title: 'Who are college students planning to vote for?',
-          pieHole: 0.4,
-           colors: ['#1189FB', '#81C4FF', '#BEE3FF' ],
-         }
+        // Options Pie Chart 1
+        var options = {title:'How often do you cheat on tests?',
+                       width:550,
+                       height:300,
+                     colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'],
+                   pieHole: 0.35,};
 
-  
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        // Instantiate and draw the chart for Pie Chart 1
+        var chart = new google.visualization.PieChart(document.getElementById('Sarah_chart_div'));
+        chart.draw(data, options);
+      }
+
+      // Callback that draws the pie chart for Pie Chart 2
+      function drawChart2() {
+
+        // Create the data table for Pie Chart 2
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Strongly agree', 2],
+          ['Agree somewhat', 2],
+          ['Disagree somewhat', 2],
+          ['Strongly disagree', 0],
+          ['Unsure', 3]
+        ]);
+
+        // Set options for Pie Chart 2
+        var options = {title:'Do you agree with the new campus ban on alcohol?',
+                       width:550,
+                       height:300,
+                     pieHole: 0.35,};
+
+        // Instantiate and draw the chart for Pie Chart 2
+        var chart = new google.visualization.PieChart(document.getElementById('Anthony_chart_div'));
         chart.draw(data, options);
       }
     </script>
+
 </head>
 <body >
   
@@ -77,8 +125,6 @@
          </div>
     <!--END HOME SECTION-->
 
-
-   
 
     <!--3 BOXES-->    
     <section  id="services-sec">
@@ -107,6 +153,7 @@
                     <div class="fade">
                     <div class="col-md-4 ">
                         <div class="service-div">
+                          <i class="fa fa-bar-chart" ></i>
                             <h4>Honest results</h4>
                             <p>
                             It’s all anonymous, so honest results are inevitable.
@@ -138,16 +185,17 @@
 
 <!--DIV 2--> 
         <div id="div2-sec">
-     
-
    
     <div class="container" id="home" >
         <div class="row text-center">
-            <div class="col-md-6">
-                 <div id="donutchart" style="width: 500px; height: 500px;"></div>
-              </div>
-              <div class="col-md-6">
-                <div id="donutchart" style="width: 500px; height: 500px;"></div>
+            <div class="col-md-12">
+              <h5> Get interesting data about your campus and others </h5>
+               <table class="columns">
+      <tr>
+        <td><div id="Sarah_chart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div id="Anthony_chart_div" style="border: 1px solid #ccc"></div></td>
+      </tr>
+    </table>
               </div>
 
               
@@ -166,7 +214,7 @@
     <div class="container" id="home" >
         <div class="row text-center">
             <div class="col-md-12">
-                <span class="head-main">Bring your article to life with interactive polls</span>
+                <h2>Bring your article to life with interactive polls </h2>
                 <h2 class="head-sub-main">Embed polls to your articles</h2>
                   <div class="col-md-4">
                     <iframe src="https://whatsgoodly.com/poll/265049/#theme=minimal" height="400" width="367" frameborder="0"></iframe>

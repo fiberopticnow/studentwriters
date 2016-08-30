@@ -115,6 +115,13 @@ font-size: 22px;
 font-weight: 900;
 }
 
+h5 {
+padding-bottom: 0px;
+font-size: 30px;
+font-weight: 900;
+color: black;
+}
+
 p {
     font-weight:300;
     line-height:30px;
@@ -201,6 +208,28 @@ height: 500px;
     font-size:50px ;
     font-weight:900;
 }
+
+/*=======================================
+  DIV 2 STYLES
+==================================================*/
+
+#div2 {
+    padding-top:100px;
+    padding-bottom:500px;
+    color:#000;
+}
+
+#div2-sec {
+
+height: 500px;
+}
+
+.div2-main{
+    font-size:50px ;
+    font-weight:900;
+}
+
+
 
 /*=======================================
   DIV 3 STYLES
