@@ -46,6 +46,24 @@ TRANSITION EFFECTS
         opacity:1;
 }
 
+    /*=======================================
+PARALLEX SCROLLING
+==================================================*/
+
+.parallax { 
+    /* The image used */
+    background: white;
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*=======================================
     GENERAL STYLES
 ==================================================*/
@@ -54,7 +72,7 @@ body {
     font-family:"Gotham-Light", sans-serif;
         
     font-size:14px;
-    background-image:url(../img/sativa.png);
+    background: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
