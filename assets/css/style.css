@@ -16,22 +16,22 @@
 GRADIENTS
 ==================================================*/
 
-
 #grad1 {
-  background: #1189FB; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #1189FB , #8a14cc); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #1189FB , #8a14cc); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #1189FB , #8a14cc); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #1189FB , #8a14cc); /* Standard syntax */
+    background-image: url="background.png";
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
 }
 
 #grad2, .grad2 {
-  background: #8a14cc; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #8a14cc, #1189FB); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #8a14cc, #1189FB); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #8a14cc, #1189FB); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #8a14cc, #1189FB); /* Standard syntax */
+
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
 }
+
 
     /*=======================================
 TRANSITION EFFECTS
@@ -46,23 +46,6 @@ TRANSITION EFFECTS
         opacity:1;
 }
 
-    /*=======================================
-PARALLEX SCROLLING
-==================================================*/
-
-.parallax { 
-    /* The image used */
-    background: white;
-
-    /* Set a specific height */
-    height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /*=======================================
     GENERAL STYLES
@@ -163,8 +146,8 @@ section {
 
 }
 #home-sec {
+    
 
-height: 300px;
    
 }
 #home {
@@ -264,6 +247,10 @@ height: 600px;
     font-size:20px ;
     font-weight:300;
     padding:5px 20px 20px 20px;
+}
+
+.padding {
+    padding-bottom: 30px;
 }
 
 /*=======================================
